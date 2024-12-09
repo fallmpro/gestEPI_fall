@@ -50,5 +50,20 @@
 
 
 
+## Liste des erreurs possibles
+
+| **Code HTTP** | **Erreur**                     | **Description**                                                                 |
+|---------------|--------------------------------|---------------------------------------------------------------------------------|
+| 400           | Bad Request                   | La requête est mal formée ou des paramètres sont manquants ou invalides.        |
+| 401           | Unauthorized                  | L'utilisateur n'est pas authentifié ou les informations d'identification sont incorrectes. |
+| 403           | Forbidden                     | L'utilisateur n'a pas les permissions nécessaires pour effectuer cette action.  |
+| 404           | Not Found                     | La ressource demandée (avion, mécanicien ou entretien) est introuvable.         |
+| 405           | Method Not Allowed            | La méthode HTTP utilisée (GET, POST, etc.) n'est pas supportée pour cet endpoint. |
+| 409           | Conflict                      | Un conflit a été détecté, comme un doublon d'enregistrement (exemple : avion déjà existant). |
+| 422           | Unprocessable Entity          | Les données envoyées sont valides mais ne peuvent pas être traitées (exemple : une référence étrangère invalide). |
+| 500           | Internal Server Error         | Une erreur interne au serveur est survenue.                                     |
+| 502           | Bad Gateway                   | Le serveur a reçu une réponse invalide d'un autre service ou d'une base de données. |
+| 503           | Service Unavailable           | Le service est temporairement indisponible (surcharge ou maintenance).          |
+
 
 
